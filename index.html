@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/7367208505.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            padding-bottom: 10%;
+            height:auto
+        }
+        @viewport{
+            zoom:1.0;
+            width:extend-to-zoom;
+        }
+        @-ms-viewport{
+            width:extend-to-zoom;
+            zoom:1.0;
+        }
+        .section1{
+            height:auto;
+            position: relative;
+            box-sizing: border-box;
+            
+            width:110%
+        }
+        .section1 .sec1_1{
+            height:80vh;
+            background-image: url('image1.jpeg');
+            background-position: center;
+            background-size: cover;
+        }
+        .section1 .sec1_2{
+            position: relative;
+            top:-100px;
+            color:white
+        }
+        .section1 .sec1_2 h1{
+            background-color: #fecd1a;
+            width:80%;
+            margin: auto;
+            font-size: 40px;
+            padding: 3% 5%;
+            
+        }
+        .section1 .sec1_2 h2{
+            background-color: #e05297;
+            width:90%;
+            text-align: center;
+            line-height: 50px;
+            margin: auto;
+            margin-top: 10px;
+            height:50px;
+            font-size: 20px;
+        }
+        .section1 .sec1_2 p{
+            color:black;
+            font-size: 20px;
+            padding-left: 3%;
+            line-height: 30px;
+        }
+        .section1 .sec1_2 button{
+            background-color:  #fecd1a;
+            border:none;
+            height: 50px;
+            margin-top: 30px;
+            font-size: 20px;
+            
+        }
+
+        /********** section 2 ********/
+        .section2{
+            width:110%;
+            height:auto;
+            box-sizing: border-box;
+            position: relative;
+            padding-bottom: -100px;
+            background-color: white;
+        }
+        .section2 .sec2_1{
+            height:100px;
+            background-image: url('image2.png');
+            background-repeat: repeat-x;
+            background-size: 30%;
+            
+        }
+        .section2 .sec2_2{
+            text-align: center;
+            position: relative;
+            top:-150px;
+            
+        }
+        .section2 .sec2_2 img{
+            box-shadow: 0px 2px 10px black;
+                   width:320px;
+                   height: 370px;
+        }
+        .section2 .sec2_2::before{
+            position: absolute;
+            content:"";
+            width:200px;
+            height:200px;
+            background-color: #fecd1a;
+            z-index: -1;
+            bottom:-50px;
+            border-radius: 50%;
+            left:-20px
+        }
+
+        .section2 .sec2_3{
+           
+            height:500px;
+            text-align: center;
+        }
+        .section2 .sec2_3 img{
+            width:250px
+        }
+        .section2 .sec2_3 h1{
+            width:50%;
+            text-align: left;
+            font-size: 40px;
+            border-bottom: 5px solid #fecd1a;
+            height:180px;
+            text-align: right;
+            margin-left: auto;
+
+        }
+
+        /********* section3 ***********/
+        .section3{
+            height:auto;
+            width:110%;
+            box-sizing: border-box;
+            position: relative;
+            background-color: white;
+        }
+        .sec3_1{
+            position: relative;
+        }
+        .section3 .sec3_1 p{
+            width:80%;
+            font-size: 20px;
+            padding-left: 5%;
+        }
+
+        .section3 p button{
+            background-color:  #fecd1a;
+            border:none;
+            height: 50px;
+            margin-top: 30px;
+            font-size: 20px;
+            
+        }
+
+        .section3 .sec3_2{
+            width:50%;
+            height:200px;
+            background-color:#fecd1a ;
+            margin-left: auto;
+            position: relative;
+            
+            border-radius: 50%;
+        }
+
+        /********** section 4************/
+        .section4{
+            width:110%;
+            box-sizing: border-box;
+            position: relative;
+            text-align: center; 
+            background-color: white;    
+        }
+        .section4 .sec4_1 img{
+            width:80%;
+            height:400px
+        }
+        .section4 .sec4_2{
+            width:70%;
+            background-color:#fecd1a ;
+            margin: auto;
+            height:auto;
+            margin-top: 20px;
+            padding:3% 3% 5% 3%;
+            text-align: left;
+            position: relative;
+            z-index: 1;
+        }
+        .section4 .sec4_2 h1{
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+        .section4 .sec4_2 p{
+            font-size: 22px;
+        }
+        .section4 .sec4_2 img{
+            position: relative;
+            width:250px;
+            left:-50px
+        }
+        .sec4_3 img{
+            width:90%;
+            top:-30px;
+            height:350px;
+            position: relative;
+            
+        }
+
+        /********** section 5***********/
+        .section5{
+            position: relative;
+            width:110%;
+            height:100vh;
+            background-image: url('image6.jpeg');
+            
+            background-size: 100%;
+            z-index: -2;
+            top:-50px;
+            background-attachment: fixed;
+        }
+
+        /*********** section 6 ******/
+        .section6{
+            width:110%;
+            height:auto;
+            
+            margin-top:-600px ;
+            background-color: white;
+            position: relative;
+        }
+        .section6 .sec6_1{
+            width:100%;
+            height:auto;
+            padding-bottom: 7%;
+            text-align: center;
+        }
+        .section6 .sec6_1 img{
+            width:250px;
+
+        }
+        .section6 .sec6_1 h3{
+            width:50%;
+            margin: auto;
+        }
+        .section6 .sec6_1 p{
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        .section6 .sec6_1 button{
+            background-color:  #fecd1a;
+            border:none;
+            height: 50px;
+            margin-top: 30px;
+            font-size: 20px;
+            
+        }
+        /********* section 7***********/
+        .section7{
+            width:110%;
+            height:200px;
+            text-align: center;
+            background-color: black;
+            color: #fecd1a;
+            animation-name: change1;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+        .section7 h1{
+            font-size: 40px;
+        }
+        @keyframes change1{
+            0%{
+                background-color: black;
+                color: #fecd1a
+            }
+            50%{
+                background-color:#fecd1a ;
+                color: black              
+            }
+            100%{
+                background-color: black;
+                color: #fecd1a
+            }
+        }
+        .section7 button{
+            background-color:  #fecd1a;
+            border:none;
+            height: 50px;
+            margin-top: 30px;
+            font-size: 20px;
+            animation-name: change2;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+        @keyframes change2{
+            0%{
+                background-color:#fecd1a ;
+                color: black              
+            }
+            50%{
+                background-color: black;
+                color: #fecd1a
+            }
+            100%{
+                background-color:#fecd1a ;
+                color: black  
+            }
+        }
+
+        /********* section 8 *******/
+        .section8{
+            width:110%;
+            height:500px;
+            background-color:#fecd1a ;
+            text-align: center;
+            padding-top: 10%;
+        }
+        .section8 img{
+            width:230px;
+            margin-bottom: 50px;
+        }
+        .section8 p{
+        font-size: 20px;
+        }
+        .section8 i{
+            font-size: 40px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section1 container-fluid">
+        <div class="sec1_1"></div>
+        <div class="sec1_2">
+            <h1>Discover Happy Socks & Sunglasses</h1>
+            <h2>Fashiongonerogue / December 25, 2020</h2>
+            <p>Made with playful accents such as palm trees, checkered patterns and stripes, get ready to step up your shades. Prices start at $189 and go up to $229. Discover the Sunday Somewhere collaboration below, and shop more at HappySocks.com<br>
+            <button>continue reading</button>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- section 2-->
+    <div class="section2 container-fluid">
+        <div class="sec2_1"></div>
+        <div class="sec2_2">
+            <img src="image3.jpeg">
+        </div>
+        <div class="sec2_3">
+            <img src="glasses1.png">
+            <h1>Fun In The Sun
+                Sunglasses</h1>
+                <p></p>
+        </div>
+    </div>
+    <div class="section3 row">
+        <div class="sec3_1 col-lg-6 col-md-6">
+      <p>We set out in search of sun, fun and relaxation and found a kindred spirit in Australian eyewear label Sunday Somewhere who helped us capture the carefree summertime mood.
+         <br><br>
+        Our Fun In The Sun sunglasses is one of the four exclusive pairs from the Sunday Somewhere x Happy Socks collection. This checkered pair combines custom Happy Socks artwork in white and black, and sunny yellow with shades of pink on Italian acetate for a fun, relaxed look.
+    <br>
+    <button>continue reading</button></p>
+    </div>
+    </div>
+
+    <!-- section 4-->
+    <div class="section4">
+    <div class="sec4_1">
+        <img src="image4.jpeg">
+    </div>
+    <div class="sec4_2">
+        <h1>Sunday Somewhere</h1>
+        <p>It's finally here: our first range of sunglasses! Made in collaboration with the amazing Australian eyewear label Sunday Somewhere, the exclusive collection includes four unique designs, crafted to capture the carefree summertime mood. Get your pair today and see the world through happy sunglasses this summer!</p>
+        <img src="glasses2.png">
+    </div>
+    <div class="sec4_3">
+        <img src="image5.jpeg">
+    </div>
+    </div>
+
+    <!-- Section 5-->
+    <div class="section5"></div>
+
+    <!-- Section 6-->
+    <div class="section6 row">
+        <div class="col-lg-3 col-md-6 sec6_1">
+            <img src="glasses1.png">
+            <h3>FUN IN THE SUN SUNGLASSES</h3>
+            <p>US$229.00 </p>
+            <button>buy now</button>
+        </div>
+        <div class="col-lg-3 col-md-6 sec6_1">
+            <img src="glasses1.png">
+            <h3>PINK FLAMINGO SUNGLASSES</h3>
+            <p>US$229.00 </p>
+            <button>buy now</button>
+        </div>
+        <div class="col-lg-3 col-md-6 sec6_1">
+            <img src="glasses1.png">
+            <h3>PUT THE LIME IN THE COCONUT SUNGLASSES</h3>
+            <p>US$229.00 </p>
+            <button>buy now</button>
+        </div>
+        <div class="col-lg-3 col-md-6 sec6_1">
+            <img src="glasses1.png">
+            <h3>FADING SUN SUNGLASSES</h3>
+            <p>US$229.00 </p>
+            <button>buy now</button>
+        </div>
+    </div>
+  <!--section 7-->
+    <div class="section7">
+       <h1>Shop Now and get 50%-60% off</h1>
+       <button>buy now</button>
+    </div>
+
+    <!--section 8-->
+    <div class="section8">
+        <div class="sec8_1">
+            <img src="image7.jpeg">
+            <p>SHARE HAPPY SOCKS X SUNDAY SOMEWHERE
+                #HAPPYSOCKSXSUNDAYSOMEWHERE</p>
+                <i class="fab fa-facebook"></i><i class="fab fa-twitter-square"></i><i class="fab fa-whatsapp-square"></i>
+        </div>
+    </div>
+</body>
+</html>
